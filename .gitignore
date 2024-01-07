@@ -1,0 +1,57 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+package-lock.json
+
+
+# portfolio
+.portfolio/logs
+.portfolio/*.log
+.portfolio/npm-debug.log*
+.portfolio/yarn-debug.log*
+.portfolio/yarn-error.log*
+.portfolio/pnpm-debug.log*
+.portfolio/lerna-debug.log*
+
+.portfolio/node_modules
+.portfolio/dist
+.portfolio/dist-ssr
+.portfolio/*.local
+
+# Editor directories and files
+.portfolio/vscode/*
+.portfolio/!.vscode/extensions.json
+.portfolio/.idea
+.portfolio/.DS_Store
+.portfolio/*.suo
+.portfolio/*.ntvs*
+.portfolio/*.njsproj
+.portfolio/*.sln
+.portfolio/*.sw?
+
+./portfolio/package-lock.json
+
+
+
