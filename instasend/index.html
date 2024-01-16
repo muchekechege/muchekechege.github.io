@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carding - Card Processing</title>
+    <meta name="description" content="Debit and Credit card Processing">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="cdn.js" defer></script>
+    <script src="renderPaymentButton.js" defer></script>
+</head>
+<body>
+
+    <div id='injectedData' class="flex flex-col justify-center items-center pt-8">
+
+        <h1 class="text-3xl text-yellow-500 font-bold">Card Payments</h1>
+
+        <form method="post" id="submit" class="flex flex-col gap-2">
+
+            <div class="">
+                <label class="font-bold" for="mode">mode</label>
+                <select class="rounded w-full px-3 py-2 border border-yellow-500 mt-1" id="mode" name="mode">
+                    <option selected ="Live">Live</option>
+                    <option value="Demo">Demo</option>
+                </select>
+            </div>
+
+            <div class="">
+                <label class="font-bold" for="firstName">firstName</label>
+                <input class="rounded w-full px-3 py-2 border border-yellow-500 mt-1" id="firstName" name="firstName" type="text" placeholder="Enter firstName" required>
+            </div>
+
+            <div class="">
+                <label class="font-bold" for="lastname">lastname</label>
+                <input class="rounded w-full px-3 py-2 border border-yellow-500 mt-1" id="lastname" name="lastname" type="text" placeholder="Enter lastname" required>
+            </div>
+
+            <div class="">
+                <label class="font-bold" for="email">email</label>
+                <input class="rounded w-full px-3 py-2 border border-yellow-500 mt-1" id="email" name="email" type="email" placeholder="Enter email" required>
+            </div>
+            
+            <div class="">
+                <label class="font-bold" for="currency">currency</label>
+                <!-- <input class="rounded w-full px-3 py-2 border border-yellow-500 mt-1" id="currency" name="currency" value="KES" type="text" placeholder="Enter currency" required> -->
+                <select class="rounded w-full px-3 py-2 border border-yellow-500 mt-1" name="currency" id="currency">
+                    <option selected ="KES">KES</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+
+            <div class="">
+                <label class="font-bold" for="amount">amount</label>
+                <input class="rounded w-full px-3 py-2 border border-yellow-500 mt-1" id="amount" name="amount" type="number" placeholder="Enter amount" required>
+            </div>
+
+            <div class="py-2">
+                <button type="submit" class="px-3 py-2 bg-yellow-500 hover:bg-orange-500 w-full">Submit</button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>
